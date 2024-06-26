@@ -1,33 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raise Buildings and Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to Raise Buildings and Solutions</h1>
-        <p>Your trusted partner in civil engineering solutions.</p>
-    </header>
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Residential Construction</li>
-            <li>Commercial Construction</li>
-            <li>Project Management</li>
-            <li>Consulting</li>
-        </ul>
-    </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a team of experienced civil engineers based in Kanhirode, Kerala, committed to delivering high-quality building solutions.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@raisebuildings.com</p>
-        <p>Phone: +91-1234567890</p>
-    </section>
-</body>
-</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
