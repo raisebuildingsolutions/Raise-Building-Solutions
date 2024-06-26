@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Raise Buildings and Solutions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>My Portfolio</h1>
+            <h1>Raise Buildings and Solutions</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <section id="home" class="section">
-            <h2>Welcome</h2>
-            <p>Welcome to my portfolio website!</p>
+            <h2>Welcome to Raise Buildings and Solutions</h2>
+            <p>Your trusted partner in civil engineering and construction solutions.</p>
         </section>
         <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Here is a brief description about myself.</p>
+            <h2>About Us</h2>
+            <p>We are a team of experienced civil engineers based in Kanhirode, Kerala, dedicated to delivering top-notch building and construction solutions.</p>
+        </section>
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of services including residential, commercial, and industrial construction.</p>
         </section>
         <section id="projects" class="section">
-            <h2>Projects</h2>
-            <p>Here are some of my projects.</p>
+            <h2>Our Projects</h2>
+            <p>Take a look at some of our completed and ongoing projects.</p>
+        </section>
+        <section id="testimonials" class="section">
+            <h2>Testimonials</h2>
+            <p>Here’s what our clients have to say about our work.</p>
         </section>
         <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Get in touch with me through the form below.</p>
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries or project discussions.</p>
             <form id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -52,14 +62,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 Raise Buildings and Solutions. All rights reserved.</p>
     </footer>
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            document.getElementById('formMessage').textContent = 'Thank you for your message!';
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
 
