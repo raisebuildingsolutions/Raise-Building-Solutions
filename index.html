@@ -3,37 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raise Buildings and Solutions</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Raise Buildings and Solutions</h1>
-        <p>Your trusted partner in civil engineering solutions.</p>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Residential Construction</li>
-            <li>Commercial Construction</li>
-            <li>Project Management</li>
-            <li>Consulting</li>
-        </ul>
-    </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a team of experienced civil engineers based in Kanhirode, Kerala, committed to delivering high-quality building solutions.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@raisebuildings.com</p>
-        <p>Phone: +91-1234567890</p>
-    </section>
+    <main>
+        <section id="home" class="section">
+            <h2>Welcome</h2>
+            <p>Welcome to my portfolio website!</p>
+        </section>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Here is a brief description about myself.</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Here are some of my projects.</p>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Get in touch with me through the form below.</p>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('formMessage').textContent = 'Thank you for your message!';
+        });
+    </script>
 </body>
 </html>
-<section id="testimonials">
-    <h2>Testimonials</h2>
-    <p>"Raise Buildings and Solutions provided exceptional service for our residential project. Highly recommend!" - John Doe</p>
-    <p>"Professional and efficient team. Our commercial building was completed on time and within budget." - Jane Smith</p>
-</section>
 
